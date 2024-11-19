@@ -660,7 +660,7 @@ p {
   }
 }
 
-.download-btn {
+.view-btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #b8a07e;
@@ -671,7 +671,7 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.download-btn:hover {
+.view-btn:hover {
   background-color: #0e0d0d;
 }
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>VINATA</title>
+  <title>Automated Attendance System</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -40,9 +40,6 @@
           <li><a class="nav-link scrollto" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="#info">About</a></li>
           <li><a class="nav-link scrollto" href="#features">Features</a></li>
-          <li><a class="nav-link scrollto" href="#design-model">Design Model</a></li>
-          <li><a class="nav-link active scrollto" href="#fabrication">Fabrication</a></li>
-          <li><a class="nav-link scrollto" href="#achievements">Achievements</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -56,12 +53,12 @@
     <div class="container">
       <div class="col-lg-15" data-aos="fade-up" data-aos-delay="200">
         <div class="row justify-content-center">
-          <img src="assets/img/Projects/VINATA_FULL.jpg" class="img-responsive" alt="Project Image" style="width: 600px; height: 600px;">
+          <img src="assets/img/Projects/AS_FULL.png" class="img-responsive" alt="Project Image" style="width: 1200px; height: 600px;">
         </div>
       </div>
     </div><!-- End Main Photo -->
 
-    <div class="content paddsection" style="padding: 20px;"></div>
+    <div class="content paddsection" style="padding: 40px;"></div>
 
     <!-- About Section -->
     <section id="info" class="about section">
@@ -70,13 +67,15 @@
           <h2>About</h2>
         </div>
       </div><!-- End Section Title -->
-      
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-2">
-          <p style="text-align: justify; color: #333333;" >Vinata was inspired by the Pepper and Mitra robots available in the market, with the core concept focused on creating an interactive guest greeting system. 
-            The robot's operation is primarily controlled by a Raspberry Pi, which handles all the functions, while the Pysttx3 library is used to convert text to speech. An Arduino is responsible for controlling the servo motors, receiving commands from the Raspberry Pi via serial communication. 
-            A 16x4 keypad matrix allows users to interact with the robot, start its functions, and use special keys to address specific guests during events. Additionally, a barcode scanner is integrated to retrieve student data from a database, enabling the robot to greet students and mark attendance.</p>
-        </div>
+          <p style="text-align: justify; color: #333333;" >The Attendance System is an innovative and streamlined solution designed to automate the process of tracking student attendance and time spent in a lab or other designated spaces. 
+            The system uses a barcode scanner to capture each student’s registration number, which is linked to their personal information stored in a database. 
+            The system retrieves and displays key details such as the student's name, registration number, and image when the barcode is scanned. Additionally, it records whether the student is marking an entry or exit, and calculates the total time spent in the lab.
+            The system operates with an intuitive Graphical User Interface (GUI) created on TinkerCAD, which allows users to easily interact with the system. Once the student scans their barcode, the GUI updates in real time, showing their status (entry or exit) and the amount of time spent inside the lab. 
+            All this data is then automatically logged in an Excel spreadsheet, where it is organized for easy tracking and analysis. The spreadsheet includes the student’s name, registration number, status, and timestamps for entry and exit, as well as the total time spent in the lab.
+            </div>
       </div><!-- End About Section -->
 
     </section><!-- End About Section -->
@@ -93,36 +92,44 @@
 
             <div class="swiper-slide">
               <div class="services-block">
-                <img src="assets/img/icons/text-to-speech.svg" style="width: 45px; height: 45px;">
-                <span>Text to Voice Conversion</span>
+                <i class="bi bi-arrow-left-right" style="width: 45px; height: 45px;"></i>
+                <span>Automated Data Entry-Exit</span>
               </div>
             </div><!-- End swiper-slide -->
 
             <div class="swiper-slide">
               <div class="services-block">
-                <img src="assets/img/icons/barcode-scanner.svg" style="width: 45px; height: 45px;">
-                <span>Barcode Integration</span>
+                <i class="bi bi-hourglass" style="width: 45px; height: 45px;"></i>
+                <span>Real time Capturing </span>
               </div>
             </div><!-- End swiper-slide -->
 
             <div class="swiper-slide">
               <div class="services-block">
-                <img src="assets/img/icons/keypad.svg" style="width: 45px; height: 45px;">
-                <span>16*4 Matrix Keypad Integration</span>
+                <i class="bi bi-upc-scan" style="width: 45px; height: 45px;"></i>
+                <span>Bar code Integrated</span>
               </div>
             </div><!-- End swiper-slide -->
 
             <div class="swiper-slide">
               <div class="services-block">
-                <img src="assets/img/icons/lcd-16x2.svg" style="width: 45px; height: 45px;">
-                <span>16*2 LCD Display</span>
+                <i class="bi bi-bar-chart-line" style="width: 45px; height: 45px;"></i>
+                <span>Data Analytics</span>
+              </div>
+            </div><!-- End swiper-slide -->
+
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-window" style="width: 45px; height: 45px;"></i>
+                <span>Thinkter GUI</span>
               </div>
             </div><!-- End swiper-slide -->
 
             <div class="swiper-slide">
               <div class="services-block">
-                <img src="assets/img/icons/hand.svg" style="width: 80px; height: 60px; margin: 0px;">
-                <span>Prosthetic Arm for Greeting</span>
+                <i class="bi bi-database" style="width: 45px; height: 45px;"></i>
+                <span>Students Data Integration </span>
               </div>
             </div><!-- End swiper-slide -->
 
@@ -132,22 +139,16 @@
       </div>
     </section><!-- End Features Section -->
 
+    <div class="content paddsection" style="padding: 40px;"></div>
+
     <section id="fabrication" class="fabrication section">
 
       <!-- Section Title -->
       <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Fabrication</h2>
+        <h2>Procedure</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <!-- Fabrication Description -->
-         
-          <div class="row gy-5">
-            <p>
-              Vinata is a sophisticated greeting robot, carefully designed and fabricated at Vignan's University. It is part of an ongoing initiative to blend cutting-edge robotics with daily university interactions, serving as a welcoming presence on campus.
-            </p>
-          </div>
 
       <!-- Fabrication Photo Gallery -->
           
@@ -156,61 +157,35 @@
             <!-- Photo 1 -->
             <div class="col-lg-4 col-md-6">
                <div class="image-box">
-                  <img src="assets/img/Projects/Vinata 01.jpg" class="img-fluid" alt="Fabrication Process Step 1">
+                  <img src="assets/img/Projects/AS_1.png" class="img-fluid" alt="Fabrication Process Step 1 " style="width: 544PX; height: 320PX;">
               </div>
+              <p class="container section-title text-center">Program</p>
             </div>
 
             <!-- Photo 2 -->
             <div class="col-lg-4 col-md-6">
                 <div class="image-box">
-                  <img src="assets/img/Projects/Vinata 02.jpg" class="img-fluid" alt="Fabrication Process Step 2">
-                </div>
+                  <img src="assets/img/Projects/AS_2.png" class="img-fluid" alt="Fabrication Process Step 1 " style="width: 544PX; height: 320PX;">
+              </div>
+              <p class="container section-title text-center">Entry Status</p>
             </div>
 
             <!-- Photo 2 -->
             <div class="col-lg-4 col-md-6">
               <div class="image-box">
-                <img src="assets/img/Projects/Vinata 03.jpg" class="img-fluid" alt="Fabrication Process Step 2">
+                <img src="assets/img/Projects/AS_3.png" class="img-fluid" alt="Fabrication Process Step 1 " style="width: 544PX; height: 320PX;">
               </div>
+              <p class="container section-title text-center">Exit Status</p>
             </div>
 
           </div><!-- End Photo Gallery -->
 
       </div><!-- End Container -->
       
-    </section>
+    </section>  
 
+    
     <div class="content paddsection" style="padding: 40px;"></div>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements section;">
-
-      <!-- Section Title -->
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Achievements</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="row gy-5">
-
-            <!-- Achievement Description -->
-            <p>
-              Vinata is a greeting robot fabricated and deployed in Vignan's University. Below are some of its key achievements and awards:
-            </p> 
-
-            <!-- Achievement List -->
-            <ul class="list-group">
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Awarded "3rd prize" on Srujankura-2023 at Vignan University</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Successfully interacted with over 5,000 visitors at Vignan’s University</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Secured "2nd position" on Engineerings Day 2024</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Received 1st place at Narsoaropet Engineering college porject expo</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Recieved ROI of 13,000 rupees</li>
-            </ul> 
-
-          </div>
-        </div>
-    </section>
 
     <!-- ======= Achievements Section ======= -->
     <section id="team">

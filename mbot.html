@@ -56,12 +56,12 @@
     <div class="container">
       <div class="col-lg-15" data-aos="fade-up" data-aos-delay="200">
         <div class="row justify-content-center">
-          <img src="assets/img/Projects/VINATA_FULL.jpg" class="img-responsive" alt="Project Image" style="width: 600px; height: 600px;">
+          <img src="assets/img/Projects/MBOT.jpg" class="img-responsive" alt="Project Image" style="width: 800px; height: 600px;">
         </div>
       </div>
     </div><!-- End Main Photo -->
 
-    <div class="content paddsection" style="padding: 20px;"></div>
+    <div class="content paddsection" style="padding: 40px;"></div>
 
     <!-- About Section -->
     <section id="info" class="about section">
@@ -70,67 +70,48 @@
           <h2>About</h2>
         </div>
       </div><!-- End Section Title -->
-      
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-2">
-          <p style="text-align: justify; color: #333333;" >Vinata was inspired by the Pepper and Mitra robots available in the market, with the core concept focused on creating an interactive guest greeting system. 
-            The robot's operation is primarily controlled by a Raspberry Pi, which handles all the functions, while the Pysttx3 library is used to convert text to speech. An Arduino is responsible for controlling the servo motors, receiving commands from the Raspberry Pi via serial communication. 
-            A 16x4 keypad matrix allows users to interact with the robot, start its functions, and use special keys to address specific guests during events. Additionally, a barcode scanner is integrated to retrieve student data from a database, enabling the robot to greet students and mark attendance.</p>
-        </div>
+          <p style="text-align: justify; color: #333333;" >The MBot is a 6 Degrees of Freedom (DOF) robotic manipulator designed and built from scratch, with each component meticulously modeled using Fusion 360 software. 
+            Every joint and link of the manipulator was carefully designed in detail, ensuring precise dimensions and accurate functionality. 
+            The advanced joint features in Fusion 360 facilitated an efficient assembly process, enabling easy integration of the individual components into a cohesive manipulator structure. 
+            The manipulator was then exported as a URDF (Unified Robot Description Format) file, which allowed seamless integration with ROS (Robot Operating System). Using ROS, the manipulator was simulated in Gazebo, where its movements and behaviors were tested in a virtual environment. 
+            The setup process was streamlined with the help of the MoveIt Setup Assistant, which enabled the creation of the necessary motion planning packages for controlling the manipulator. 
+            As a result, the manipulator was successfully configured to perform complex tasks, including pick-and-place operations, demonstrating its precision and reliability in handling objects in various positions. This integration of Fusion 360, ROS, Gazebo, and MoveIt has enabled the MBot manipulator to achieve a high level of performance and flexibility for various robotic applications.
+
+          </div>
       </div><!-- End About Section -->
 
     </section><!-- End About Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Features</h2>
-        </div>
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section;">
 
-        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <img src="assets/img/icons/text-to-speech.svg" style="width: 45px; height: 45px;">
-                <span>Text to Voice Conversion</span>
+          <!-- Section Title -->
+          <div class="container section-title text-center" data-aos="fade-up">
+            <h2>Features</h2>
+          </div><!-- End Section Title -->
+    
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+              <div class="row gy-5">
+    
+   
+                <!-- Features List -->
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-play-fill"></i> Modelled Using Fusion 360 software</li>
+                  <li class="list-group-item"><i class="bi bi-play-fill"></i> 6 Degrees of Freedom</li>
+                  <li class="list-group-item"><i class="bi bi-play-fill"></i> Controlled with move_it package</li>
+                  <li class="list-group-item"><i class="bi bi-play-fill"></i> Contains revolute and prismatic joints</li>
+                  <li class="list-group-item"><i class="bi bi-play-fill"></i> Estimated trajectory planning with forward & inverse Kinematics</li>
+                </ul> 
+    
               </div>
-            </div><!-- End swiper-slide -->
+            </div>
+        </section>
 
-            <div class="swiper-slide">
-              <div class="services-block">
-                <img src="assets/img/icons/barcode-scanner.svg" style="width: 45px; height: 45px;">
-                <span>Barcode Integration</span>
-              </div>
-            </div><!-- End swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <img src="assets/img/icons/keypad.svg" style="width: 45px; height: 45px;">
-                <span>16*4 Matrix Keypad Integration</span>
-              </div>
-            </div><!-- End swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <img src="assets/img/icons/lcd-16x2.svg" style="width: 45px; height: 45px;">
-                <span>16*2 LCD Display</span>
-              </div>
-            </div><!-- End swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <img src="assets/img/icons/hand.svg" style="width: 80px; height: 60px; margin: 0px;">
-                <span>Prosthetic Arm for Greeting</span>
-              </div>
-            </div><!-- End swiper-slide -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section><!-- End Features Section -->
+    <div class="content paddsection" style="padding: 40px;"></div>
 
     <section id="fabrication" class="fabrication section">
 
@@ -141,14 +122,6 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <!-- Fabrication Description -->
-         
-          <div class="row gy-5">
-            <p>
-              Vinata is a sophisticated greeting robot, carefully designed and fabricated at Vignan's University. It is part of an ongoing initiative to blend cutting-edge robotics with daily university interactions, serving as a welcoming presence on campus.
-            </p>
-          </div>
-
       <!-- Fabrication Photo Gallery -->
           
           <div class="row gy-5">
@@ -156,21 +129,21 @@
             <!-- Photo 1 -->
             <div class="col-lg-4 col-md-6">
                <div class="image-box">
-                  <img src="assets/img/Projects/Vinata 01.jpg" class="img-fluid" alt="Fabrication Process Step 1">
+                  <img src="assets/img/Projects/MBOT_3.png" class="img-fluid" alt="Fabrication Process Step 1">
               </div>
             </div>
 
             <!-- Photo 2 -->
             <div class="col-lg-4 col-md-6">
                 <div class="image-box">
-                  <img src="assets/img/Projects/Vinata 02.jpg" class="img-fluid" alt="Fabrication Process Step 2">
+                  <img src="assets/img/Projects/MBOT_1.jpg" class="img-fluid" alt="Fabrication Process Step 2">
                 </div>
             </div>
 
             <!-- Photo 2 -->
             <div class="col-lg-4 col-md-6">
               <div class="image-box">
-                <img src="assets/img/Projects/Vinata 03.jpg" class="img-fluid" alt="Fabrication Process Step 2">
+                <img src="assets/img/Projects/MBOT_2.jpg" class="img-fluid" alt="Fabrication Process Step 2">
               </div>
             </div>
 
@@ -182,35 +155,7 @@
 
     <div class="content paddsection" style="padding: 40px;"></div>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements section;">
 
-      <!-- Section Title -->
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Achievements</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="row gy-5">
-
-            <!-- Achievement Description -->
-            <p>
-              Vinata is a greeting robot fabricated and deployed in Vignan's University. Below are some of its key achievements and awards:
-            </p> 
-
-            <!-- Achievement List -->
-            <ul class="list-group">
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Awarded "3rd prize" on Srujankura-2023 at Vignan University</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Successfully interacted with over 5,000 visitors at Vignan’s University</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Secured "2nd position" on Engineerings Day 2024</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Received 1st place at Narsoaropet Engineering college porject expo</li>
-              <li class="list-group-item"><i class="bi bi-play-fill"></i> Recieved ROI of 13,000 rupees</li>
-            </ul> 
-
-          </div>
-        </div>
-    </section>
 
     <!-- ======= Achievements Section ======= -->
     <section id="team">
