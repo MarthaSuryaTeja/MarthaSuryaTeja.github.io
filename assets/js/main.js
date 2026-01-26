@@ -261,4 +261,81 @@
     }
   });
 
+
+new Swiper('.achievements-slider', {
+    loop: true,
+    slidesPerView: 1,        // ONE card per view
+    centeredSlides: true,    // center card
+    spaceBetween: 30,
+    speed: 800,
+    //autoplay: {
+    //  delay: 5000,          // 3 seconds
+      disableOnInteraction: false,
+    //},
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
 })()
+
+
+
+document.querySelectorAll('.slideshow').forEach(slideshow => {
+  const slides = slideshow.querySelectorAll('.slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 2500); // change image every 2.5 seconds
+});
+
+
+/* Swiper initialization */
+const achievementSwiper = new Swiper('.achievements-slider', {
+  loop: true,
+  speed: 800,
+  //autoplay: {
+  //  delay: 4000,
+  //  disableOnInteraction: false,
+  //},
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+/* Pause / Play button */
+const pauseBtn = document.getElementById('achievement-pause-btn');
+let paused = false;
+
+pauseBtn.addEventListener('click', () => {
+  if (paused) {
+    achievementSwiper.autoplay.start();
+    pauseBtn.textContent = '❚❚';
+  } else {
+    achievementSwiper.autoplay.stop();
+    pauseBtn.textContent = '▶';
+  }
+  paused = !paused;
+});
+
+/* Image slideshow inside cards */
+document.querySelectorAll('.slideshow').forEach(slideshow => {
+  const slides = slideshow.querySelectorAll('.slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 2500);
+});
+
