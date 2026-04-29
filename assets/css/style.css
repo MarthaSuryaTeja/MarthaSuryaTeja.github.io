@@ -882,7 +882,11 @@ p {
 }
 
 #portfolio .filter-Publications .portfolio-pad {
-  background-color: #372f6b; /* Internships */
+  background-color: #372f6b; /* Publications */
+}
+
+#portfolio .filter-Patents .portfolio-pad {
+  background-color: #5c7c8a; /* Patents */
 }
 
 #portfolio .filter-Internships .portfolio-pad {

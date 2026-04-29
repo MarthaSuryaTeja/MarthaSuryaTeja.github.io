@@ -622,7 +622,8 @@
             <li data-filter=".filter-Courses">Courses</li>
             <li data-filter=".filter-Events">Events</li>
             <li data-filter=".filter-Certificates">Certificates</li>
-            <li data-filter=".filter-Publications">Publications</li>         
+            <li data-filter=".filter-Publications">Publications</li> 
+            <li data-filter=".filter-Patents">Patents</li>          
             <li data-filter=".filter-Internships">Internships</li>
           </ul>
         </div>
@@ -997,7 +998,7 @@
         
         <!-- Publications -->
 
-        <!--<div class="col-lg-4 col-md-6 portfolio-item filter-Publications">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Publications">
           <div class="portfolio-pad">
             <div class="portfolio-info">
               <h4>The Impact of Robots in Agriculture for Enhanced Precision in Farming</h4>
@@ -1005,7 +1006,52 @@
               <p>In-review</p>
             </div>
           </div>
-        </div>-->
+        </div>
+
+
+         <!-- Patents -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Patents">
+          <div class="portfolio-pad">
+            <div class="portfolio-info">
+              <h4>Autonomous Space Exploring Rover with onboard Manipulator (IRAVATH)</h4>
+              <h6>490026-001</h6>
+              <p>In-review</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Patents">
+          <div class="portfolio-pad">
+            <div class="portfolio-info">
+              <h4>Autonomous House Cleaning Robot (Arvin)</h4>
+              <h6>489952-001</h6>
+              <p>In-review</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Patents">
+          <div class="portfolio-pad">
+            <div class="portfolio-info">
+              <h4>Autonomous Localization and Mapping Robot for Delivery Applications (AMR)</h4>
+              <h6>489955-001</h6>
+              <p>In-review</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Patents">
+          <div class="portfolio-pad">
+            <div class="portfolio-info">
+              <h4> Autonomous Precision Weed Detection and Removal Robot for Smart Farming</h4>
+              <h6>490033-001</h6>
+              <p>In-review</p>
+            </div>
+          </div>
+        </div>
+
+
 
         <!-- Internships -->
 
@@ -1057,94 +1103,96 @@
                 <h2 class="mb-30">GET IN TOUCH</h2>
                 <ul class="contact-details">
                   <li><span>10-14, Nallabelly, Warangal</span></li>
-                  <li><span>Telangana, India - 522213 </span></li>
+                  <li><span>Telangana, India - 506349 </span></li>
                   <li><span>msuryateja0302@gmail.com</span></li>
                 </ul>
               </div>
             </div>
 
             <!-- Contact Form -->
-            <div class="col-lg-6">
-              <form id="contactForm" action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row gy-3">
+              <div class="col-lg-6">
+                <form id="contactForm" action="https://formspree.io/f/mdayrjdo" method="POST" class="php-email-form">
+                  <div class="row gy-3">
 
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                      <div class="invalid-feedback">Please enter your name.</div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                      <div class="invalid-feedback">Please enter a subject.</div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        <div class="invalid-feedback">Please enter a subject.</div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
-                      <div class="invalid-feedback">Please write a message.</div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
+                        <div class="invalid-feedback">Please write a message.</div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
+                    <!-- Formspree anti-spam -->
+                    <input type="text" name="_gotcha" style="display:none">
 
-                  <div class="mt-0">
-                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                  </div>
+                    <div class="col-lg-12">
+                      <div class="loading" style="display:none;">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div>
+                    </div>
 
-                </div>
-              </form>
-            </div>
+                    <div class="mt-0">
+                      <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                    </div>
+
+                  </div>
+                </form>
+              </div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Contact Section -->
 
-    <!-- JS Validation -->
     <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault(); // prevent default submit
+      const form = document.getElementById("contact-form");
+      const status = document.getElementById("form-status");
 
-      let form = e.target;
-      let valid = true;
+      async function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
 
-      // Basic Validation
-      form.querySelectorAll('input, textarea').forEach(function(input){
-        if (!input.value.trim()) {
-          valid = false;
-          input.classList.add('is-invalid');
-        } else {
-          input.classList.remove('is-invalid');
-        }
-        // Email regex check
-        if(input.type === "email"){
-          const regex = /^\S+@\S+\.\S+$/;
-          if(!regex.test(input.value)){
-            valid = false;
-            input.classList.add('is-invalid');
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        }).then(response => {
+          if (response.ok) {
+            status.innerHTML = "✅ Message sent successfully!";
+            form.reset();
+          } else {
+            response.json().then(data => {
+              status.innerHTML = data.errors
+                ? data.errors.map(error => error.message).join(", ")
+                : "❌ Oops! Something went wrong.";
+            });
           }
-        }
-      });
-
-      if(valid){
-        form.submit(); // submit if all fields are valid
+        }).catch(() => {
+          status.innerHTML = "❌ Network error. Try again.";
+        });
       }
-    });
+
+      form.addEventListener("submit", handleSubmit);
     </script>
 
 
